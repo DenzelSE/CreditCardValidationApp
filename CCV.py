@@ -13,7 +13,7 @@ def credit_card_validation(card_no):
     list_even_idx = []
     list_odd_idx_doubles = []
     print(list_card_no)
-    for idx in list_card_no:
+    for idx in enumerate(list_card_no):
         if int(idx) % 2 != 0:
             list_even_idx.append(int(list_card_no[int(idx)]))
         if int(idx) % 2 == 0:
